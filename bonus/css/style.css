@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+button {
+    padding: 0.5rem 2rem;
+}
+
 /* #endregion Regole Reset */
 
 /* #region Container */
@@ -22,3 +26,16 @@
 }
 
 /* #endregion Container */
+
+/* #region Image Dimensions */
+.imageDimensions {
+    display: flex;
+    gap: 1rem;
+}
+
+.imageDimensions input {
+    display: block;
+    text-align: center;
+}
+
+/* #endregion Image Dimensions */

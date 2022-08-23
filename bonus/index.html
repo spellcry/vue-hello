@@ -14,9 +14,16 @@
 
 <body>
     <main id="main-content">
-        <div class="container flex">
-            <h1>{{ titolo }}</h1>
-            <img :src="imageSrc" :alt="imageAlt">
+        <div :class="containerClass">
+            <h1>{{ toUpperCase(titolo) }}</h1>
+            <img :src=`${imageSrc}${imageWidth}/${imageHeight}/` :alt="imageAlt">
+            <div class="imageDimensions">
+                <label for="image-width">Image Width</label>
+                <input type="text" id="image-width">
+                <label for="image-height">Image Height</label>
+                <input type="text" id="image-height">
+            </div>
+            <button @click="clickModifyImgDimensions">Modifica Dimensioni Immagine</button>
         </div>
     </main>
     <script type="text/javascript" src="./js/scripts.js"></script>
