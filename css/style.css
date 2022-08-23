@@ -6,3 +6,18 @@
 }
 
 /* #endregion Regole Reset */
+
+/* #region Container */
+.container {
+    max-width: 1200px;
+    margin-inline: auto;
+    padding: 2rem;
+}
+
+.container.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* #endregion Container */
